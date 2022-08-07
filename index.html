@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+      />
+      <link rel="stylesheet" href="styles.css" />
+      <title>Muslux - Music App</title>
+      <link rel="icon" href="assets/imgs/logo.png" type="image/icon type">
+   </head>
+
+   <body>
+      <header>
+         <div class="menu_side">
+            <img src="assets/imgs/logo.png" class="logo" alt="logo" />
+            <h1>Muslux</h1>
+            <div class="playlist">
+               <h4 class="active">
+                  <span></span><i class="bi bi-house-door-fill"></i> Home
+               </h4>
+               <h4 class="active">
+                  <span></span><i class="bi bi-collection-fill"></i> Library
+               </h4>
+               <h4 class="active">
+                  <span></span><i class="bi bi-star-fill"></i> Liked Songs
+               </h4>
+               <h4 class="active">
+                  <span></span
+                  ><i class="bi bi-music-note-beamed"></i> Recommended
+               </h4>
+            </div>
+            <div class="menu_song">
+               <h4 class="active">
+                  <i class="bi bi-heart-fill"></i>Favourites
+               </h4>
+               <li class="songItem">
+                  <span>01</span>
+                  <img src="assets/imgs/kesariya.jpg" alt="kesariya" />
+                  <h5>
+                     Kesariya
+                     <div class="subtitle">Arijit Singh</div>
+                  </h5>
+                  <i
+                     class="bi playListPlay bi-play-circle-fill"
+                     id="kesariya"
+                  ></i>
+               </li>
+               <li class="songItem">
+                  <span>02</span>
+                  <img src="assets/imgs/pasoori.jpg" alt="pasoori" />
+                  <h5>
+                     Pasoori
+                     <div class="subtitle">Ali Sethi and Shae Gill</div>
+                  </h5>
+                  <i
+                     class="bi playListPlay bi-play-circle-fill"
+                     id="pasoori"
+                  ></i>
+               </li>
+               <li class="songItem">
+                  <span>03</span>
+                  <img src="assets/imgs/headinghome.jpg" alt="headinghome" />
+                  <h5>
+                     Heading Home
+                     <div class="subtitle">Alan Walker</div>
+                  </h5>
+                  <i
+                     class="bi playListPlay bi-play-circle-fill"
+                     id="headinghome"
+                  ></i>
+               </li>
+               <li class="songItem">
+                  <span>04</span>
+                  <img src="assets/imgs/srivalli.jpg" alt="srivalli" />
+                  <h5>
+                     Srivalli
+                     <div class="subtitle">Javed Ali</div>
+                  </h5>
+                  <i
+                     class="bi playListPlay bi-play-circle-fill"
+                     id="srivalli"
+                  ></i>
+               </li>
+               <li class="songItem">
+                  <span>05</span>
+                  <img src="assets/imgs/holdon.jpg" alt="holdon" />
+                  <h5>
+                     Hold On
+                     <div class="subtitle">Justin Beiber</div>
+                  </h5>
+                  <i
+                     class="bi playListPlay bi-play-circle-fill"
+                     id="holdon"
+                  ></i>
+               </li>
+            </div>
+         </div>
+
+         <div class="song_side">
+            <img src="assets/imgs/cover.png" class="cover" alt="" />
+            <nav>
+               <ul>
+                  <li>Discover <span></span></li>
+                  <li>My Library <span></span></li>
+                  <li>Radio <span></span></li>
+               </ul>
+               <div class="search">
+                  <i class="bi bi-search"></i>
+                  <input type="text" placeholder="Search Music..." />
+               </div>
+               <div class="user">
+                  <img src="assets/imgs/admin.svg" alt="user_admin" />
+               </div>
+            </nav>
+            <div class="content">
+               <img src="assets/imgs/tophit.jpg" alt="" />
+               <h1>Trending Hot Hits</h1>
+
+               <div class="buttons">
+                  <button>PLAY</button>
+                  <button>Follow</button>
+               </div>
+            </div>
+            <div class="popular_song">
+               <div class="h4">
+                  <h4>Popular Songs</h4>
+                  <div class="btn_s">
+                     <i id="left_scroll" class="bi bi-arrow-left-short"></i>
+                     <i id="right_scroll" class="bi bi-arrow-right-short"></i>
+                  </div>
+               </div>
+               <div class="pop_song">
+                  <li class="songItem">
+                     <div class="img_play">
+                        <img
+                           src="assets/imgs/chaandbaaliyan.jpg"
+                           alt="chaandbaaliyan"
+                        />
+                        <i
+                           class="bi playListPlay bi-play-circle-fill"
+                           id="chaandbaaliyan"
+                        ></i>
+                     </div>
+                     <h5>
+                        ChaandBaaliyan <br />
+                        <div class="subtitle">Aditya A</div>
+                     </h5>
+                  </li>
+
+                  <li class="songItem">
+                     <div class="img_play">
+                        <img
+                           src="assets/imgs/headinghome.jpg"
+                           alt="headinghome"
+                        />
+                        <i
+                           class="bi playListPlay bi-play-circle-fill"
+                           id="headinghome"
+                        ></i>
+                     </div>
+                     <h5>
+                        Heading Home <br />
+                        <div class="subtitle">Alan Walker</div>
+                     </h5>
+                  </li>
+
+                  <li class="songItem">
+                     <div class="img_play">
+                        <img src="assets/imgs/kesariya.jpg" alt="kesariya" />
+                        <i
+                           class="bi playListPlay bi-play-circle-fill"
+                           id="kesariya"
+                        ></i>
+                     </div>
+                     <h5>
+                        Kesariya <br />
+                        <div class="subtitle">Arijit Singh</div>
+                     </h5>
+                  </li>
+                  <li class="songItem">
+                     <div class="img_play">
+                        <img
+                           src="assets/imgs/rangisaari.jpg"
+                           alt="rangisaari"
+                        />
+                        <i
+                           class="bi playListPlay bi-play-circle-fill"
+                           id="rangisaari"
+                        ></i>
+                     </div>
+                     <h5>
+                        Rangisaari <br />
+                        <div class="subtitle">Kavita Seth, Kanishk Seth</div>
+                     </h5>
+                  </li>
+                  <li class="songItem">
+                     <div class="img_play">
+                        <img
+                           src="assets/imgs/alagaasmaan.jpg"
+                           alt="alagaasmaan"
+                        />
+                        <i
+                           class="bi playListPlay bi-play-circle-fill"
+                           id="alagaasmaan"
+                        ></i>
+                     </div>
+                     <h5>
+                        Alag Aasmaan <br />
+                        <div class="subtitle">Anuv Jain</div>
+                     </h5>
+                  </li>
+                  <li class="songItem">
+                     <div class="img_play">
+                        <img
+                           src="assets/imgs/bhoolbhulaiya.jpg"
+                           alt="bhoolbhulaiya"
+                        />
+                        <i
+                           class="bi playListPlay bi-play-circle-fill"
+                           id="bhoolbhulaiya"
+                        ></i>
+                     </div>
+                     <h5>
+                        Bhool Bhulaiya 2<br />
+                        <div class="subtitle">
+                           Pritam Chakraborty and Tanishk Bagchi
+                        </div>
+                     </h5>
+                  </li>
+                  <li class="songItem">
+                     <div class="img_play">
+                        <img src="assets/imgs/holdon.jpg" alt="holdon" />
+                        <i
+                           class="bi playListPlay bi-play-circle-fill"
+                           id="holdon"
+                        ></i>
+                     </div>
+                     <h5>
+                        Hold On <br />
+                        <div class="subtitle">Justin Beiber</div>
+                     </h5>
+                  </li>
+                  <li class="songItem">
+                     <div class="img_play">
+                        <img src="assets/imgs/pasoori.jpg" alt="pasoori" />
+                        <i
+                           class="bi playListPlay bi-play-circle-fill"
+                           id="pasoori"
+                        ></i>
+                     </div>
+                     <h5>
+                        Pasoori <br />
+                        <div class="subtitle">Ali Sethi and Shae Gill</div>
+                     </h5>
+                  </li>
+                  <li class="songItem">
+                     <div class="img_play">
+                        <img src="assets/imgs/pehlidafa.jpg" alt="pehlidafa" />
+                        <i
+                           class="bi playListPlay bi-play-circle-fill"
+                           id="pehlidafa"
+                        ></i>
+                     </div>
+                     <h5>
+                        Pehli Dafa <br />
+                        <div class="subtitle">Atif Aslam</div>
+                     </h5>
+                  </li>
+                  <li class="songItem">
+                     <div class="img_play">
+                        <img src="assets/imgs/aziyat.jpg" alt="aziyat" />
+                        <i
+                           class="bi playListPlay bi-play-circle-fill"
+                           id="aziyat"
+                        ></i>
+                     </div>
+                     <h5>
+                        Aziyat <br />
+                        <div class="subtitle">Pratsofficial</div>
+                     </h5>
+                  </li>
+
+                  <li class="songItem">
+                     <div class="img_play">
+                        <img
+                           src="assets/imgs/countingstars.jpg"
+                           alt="countingstars"
+                        />
+                        <i
+                           class="bi playListPlay bi-play-circle-fill"
+                           id="countingstars"
+                        ></i>
+                     </div>
+                     <h5>
+                        Counting Stars <br />
+                        <div class="subtitle">OneRepublic</div>
+                     </h5>
+                  </li>
+
+                  <li class="songItem">
+                     <div class="img_play">
+                        <img
+                           src="assets/imgs/stereohearts.jpg"
+                           alt="stereohearts"
+                        />
+                        <i
+                           class="bi playListPlay bi-play-circle-fill"
+                           id="stereohearts"
+                        ></i>
+                     </div>
+                     <h5>
+                        Stereo Hearts <br />
+                        <div class="subtitle">Gym Class Heroes</div>
+                     </h5>
+                  </li>
+                  <li class="songItem">
+                     <div class="img_play">
+                        <img
+                           src="assets/imgs/waktkibaatien.jpg"
+                           alt="waktkibaatien"
+                        />
+                        <i
+                           class="bi playListPlay bi-play-circle-fill"
+                           id="waktkibaatien"
+                        ></i>
+                     </div>
+                     <h5>
+                        Wakt Ki Baatien <br />
+                        <div class="subtitle">Dream Note</div>
+                     </h5>
+                  </li>
+                  <li class="songItem">
+                     <div class="img_play">
+                        <img src="assets/imgs/srivalli.jpg" alt="srivalli" />
+                        <i
+                           class="bi playListPlay bi-play-circle-fill"
+                           id="srivalli"
+                        ></i>
+                     </div>
+                     <h5>
+                        Srivalli <br />
+                        <div class="subtitle">Javed Ali</div>
+                     </h5>
+                  </li>
+                  <li class="songItem">
+                     <div class="img_play">
+                        <img
+                           src="assets/imgs/mairangsharbatonka.jpg"
+                           alt="mairangsharbatonka"
+                        />
+                        <i
+                           class="bi playListPlay bi-play-circle-fill"
+                           id="mairangsharbatonka"
+                        ></i>
+                     </div>
+                     <h5>
+                        Main Rang Sharbaton Ka <br />
+                        <div class="subtitle">Atif Aslam</div>
+                     </h5>
+                  </li>
+               </div>
+            </div>
+            <div class="popular_artists">
+               <div class="h4">
+                  <h4>Popular Artists</h4>
+                  <div class="btn_s">
+                     <i id="left_scrolls" class="bi bi-arrow-left-short"></i>
+                     <i id="right_scrolls" class="bi bi-arrow-right-short"></i>
+                  </div>
+               </div>
+               <div class="item">
+                  <li>
+                     <img
+                        src="assets/imgs/alanwalker.jpg"
+                        alt="Artist 1"
+                        title="Artist 1"
+                     />
+                     <i class="bi playListPlay bi-play-circle-fill" id="headinghome"></i>
+                  </li>
+                  <li>
+                     <img
+                        src="assets/imgs/billieelish.jpg"
+                        alt="Artist 2"
+                        title="Artist 2"
+                     />
+                     <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                  </li>
+                  <li>
+                     <img
+                        src="assets/imgs/ariana.jpg"
+                        alt="Artist 3"
+                        title="Artist 3"
+                     />
+                     <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                  </li>
+                  <li>
+                     <img
+                        src="assets/imgs/arijitsingh.jpg"
+                        alt="Artist 4"
+                        title="Artist 4"
+                     />
+                     <i class="bi playListPlay bi-play-circle-fill" id="kesariya"></i>
+                  </li>
+                  <li>
+                     <img
+                        src="assets/imgs/armaanmalik.jpg"
+                        alt="Artist 5"
+                        title="Artist 5"
+                     />
+                     <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                  </li>
+                  <li>
+                     <img
+                        src="assets/imgs/dualipa.jpg"
+                        alt="Artist 6"
+                        title="Artist 6"
+                     />
+                     <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                  </li>
+                  <li>
+                     <img
+                        src="assets/imgs/justinbeiber.jpg"
+                        alt="Artist 7"
+                        title="Artist 7"
+                     />
+                     <i class="bi playListPlay bi-play-circle-fill" id="holdon"></i>
+                  </li>
+                  <li>
+                     <img
+                        src="assets/imgs/shaan.jpg"
+                        alt="Artist 8"
+                        title="Artist 8"
+                     />
+                     <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                  </li>
+                  <li>
+                     <img
+                        src="assets/imgs/shreya goshal.jpg"
+                        alt="Artist 9"
+                        title="Artist 9"
+                     />
+                     <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                  </li>
+                  <li>
+                     <img
+                        src="assets/imgs/taylorswift.jpg"
+                        alt="Artist 10"
+                        title="Artist 10"
+                     />
+                     <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                  </li>
+                  <li>
+                     <img
+                        src="assets/imgs/sonunigam.jpg"
+                        alt="Artist 11"
+                        title="Artist 11"
+                     />
+                     <i class="bi playListPlay bi-play-circle-fill" id="3"></i>
+                  </li>
+                  <li>
+                     <img
+                        src="assets/imgs/harrystyles.jpg"
+                        alt="Artist 12"
+                        title="Artist 12"
+                     />
+                     <i class="bi playListPlay bi-play-circle-fill" id="1"></i>
+                  </li>
+               </div>
+            </div>
+         </div>
+
+         <div class="master_play">
+            <div class="wave">
+               <div class="wave1"></div>
+               <div class="wave1"></div>
+               <div class="wave1"></div>
+            </div>
+            <img
+               src="assets/imgs/alagaasmaan.jpg"
+               alt="default"
+               id="poster_master_play"
+            />
+            <h5 id="title">
+               Alag Aasmaan <br />
+               <div class="subtitle">Anuv Jain</div>
+            </h5>
+            <div class="icon">
+               <i class="bi bi-skip-start-fill" id="back"></i>
+               <i class="bi bi-play-fill" id="masterPlay"></i>
+               <i class="bi bi-skip-end-fill" id="next"></i>
+            </div>
+            <span id="currentStart">0:00</span>
+            <div class="bar">
+               <input type="range" id="seek" min="0" value="0" max="100" />
+               <div class="bar2" id="bar2"></div>
+               <div class="dot"></div>
+            </div>
+            <span id="currentEnd">0:00</span>
+
+            <div class="vol">
+               <i class="bi bi-volume-down-fill" id="vol_icon"></i>
+               <input type="range" id="vol" min="0" value="40" max="100" />
+               <div class="vol_bar" id=""></div>
+               <div class="dot" id="vol_dot"></div>
+            </div>
+         </div>
+      </header>
+      <script src="index.js"></script>
+   </body>
+</html>
